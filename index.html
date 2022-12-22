@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" >
+    <title>Booki</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1b9a56f3b2.js" crossorigin="anonymous"></script> <!-- lien pour insérer les îcones tout au long du code avec la balise <i>-->
+</head>
+
+<body>
+
+    <header class="entete"> <!-- en-tête du site Booki-->
+        <img src="assets/logo/Booki.png" alt="logo-booki">  <!-- logo Booki -->
+        <nav>
+            <div>
+                <a href="#hebergements">Hébergements</a> <!-- liens qui nous amène à la partie du site liées aux activités/hébergements grâce au "#" et à son ancre id=""-->
+                <a href="#activites">Activités</a>
+            </div>
+        </nav>
+    </header>
+
+    <main> <!-- contenu du site Booki-->
+
+        <section>
+            <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
+            <p>En plein centre-ville ou en pleine nature</p>
+
+            <form method="get" action="">  <!-- fonction recherche de ma page-->
+                <i class="fa-solid fa-location-dot"></i>
+                <input type="search" name="recherche" id="recherche">
+                <input type="submit" name="bouton" id="bouton" value="Rechercher">
+            </form>
+
+            <form method="get" action="" > <!--filtres de ma page-->
+                <div>
+                    <label for="filtre">Filtres</label>             
+                   
+                    <i class="fa-solid fa-money-bill-wave">
+                        <input type="button" name="economique" id="economique" value="Economique">
+                    </i>
+                    <i class="fa-solid fa-person">
+                        <input type="button" name="familial" id="familial" value="Familial">
+                    </i>
+                    <i class="fa-solid fa-heart">
+                        <input type="button" name="romantique" id="romantique" value="Romantique">
+                    </i>
+                    <i class="fa-solid fa-dog">
+                        <input type="button" name="animauxautorisés" id="animauxautorisés" value="Animaux autorisés">
+                    </i>
+                </div>                
+            </form>
+        </section>
+
+        <section>
+            <article>
+
+            </article>
+
+            <article>
+                
+            </article>
+        </section>
+
+        <section>
+
+        </section>
+
+    </main>
+
+    <footer>  <!-- pied de page du site Booki-->
+
+    </footer>
+
+</body>
+</html>

@@ -1,35 +1,131 @@
-/*#mapage {
-    margin: 5px  ;
-  }*/
-    
+  #mapage {            /*Pour le desktop : résolution de la taille minimale et maximale*/
+    max-width: 1400px;
+    min-width: 992px;
+    margin-top: 44px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 
-nav {
+  
+  header img{
+    width : 61.09px;
+    height : 19px;
+  } 
+
+  nav{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
 
-  nav a {
+  nav a{
     margin-left: 5px;
     margin-right: 77px;
   }
 
   a{
-    font-family: 'Raleway:wght@500', sans-serif;
+    font-family: 'Raleway:wght@400', sans-serif;
     text-decoration: none;
     color:black;
     font-size: 16px;
-    
   }
 
-  a:hover {
+  a:hover{
     border-top: 2px #0065FC solid;
+    font-family: 'Raleway', sans-serif;
     color:#0065FC;
   }
 
+  
+
+  main{
+    margin : 63px 0px 60px 0px;
+  }
+  
   section h1{
-    font-family: 'Raleway:wght@700', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 22px;
+    margin-bottom: 8px;
   }
 
+  section p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+
+  
+
+  #barrederecherche{
+    display: flex;
+    margin-bottom: 25px;
+  }
+
+  #zoneicone{
+    position: relative;
+    width: 50px;
+    height: 49px;
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+  }
+
+  .fa-location-dot{
+      position:absolute;
+      padding-top: 15px;
+      padding-left: 18px;
+      font-size: 1.2em;
+  }
+
+  #saisie{
+    width:280px;
+    height: 49px;
+    margin-top: 0px;
+    font-size: 18px;
+    border: 1px solid #F2F2F2;
+  }
+
+  #bouton{
+    width: 132px;
+    height: 49px;
+    margin-top: 0px;
+    color:#FFFFFF;
+    font-size: 18px;
+    background-color:#0065FC;
+    border: 1px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;
+  }
+
+  #zonedesfiltres{
+    display:flex;
+    align-items: center;
+    margin-top: 0px;
+    margin-left: 10px;
+  }
+
+  #filtre{
+    margin-right: 10px;
+  }
+  
+  .boutondefiltres{
+    position:relative;
+    border: 2px solid blue;
+    font-size: 17px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left:22px;
+    margin-right: 15px;
+    width: 150px;
+   
+  }
+
+  #economique{
+    position:absolute;
+    border:none;
+    background-color: #FFFFFF;
+  }
+
+
+  

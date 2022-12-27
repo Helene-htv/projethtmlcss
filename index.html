@@ -5,11 +5,11 @@
     <meta charset="utf-8" >
     <title>Booki</title>
     <link href="css/styles.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
     </style>
     <script src="https://kit.fontawesome.com/1b9a56f3b2.js" crossorigin="anonymous"></script> <!-- lien pour insérer les îcones tout au long du code avec la balise <i>-->
 </head>
@@ -36,36 +36,49 @@
             <p>En plein centre-ville ou en pleine nature</p>
 
             <form method="get" action="">  <!-- fonction recherche de ma page-->
-                <i class="fa-solid fa-location-dot"></i>
-                <input type="search" name="recherche" id="recherche">
-                <input type="submit" name="bouton" id="bouton" value="Rechercher">
+                <div id="barrederecherche">
+                    <div id="zoneicone">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div id="zonedesaisie">
+                        <input type="search" name="saisie" id="saisie">
+                    </div>
+                    
+                    <div id="boutondevalidation">
+                        <input type="submit" name="bouton" id="bouton" value="Rechercher">
+                    </div>
+                </div>
             </form>
 
             <form method="get" action="" > <!--filtres de ma page-->
-                
-                <label for="filtre">Filtres</label>      
-                    <div class="position-des-filtres">
-                        <div>
-                            <i class="fa-solid fa-money-bill-wave">
-                                <input type="button" name="economique" id="economique" value="Economique">
-                            </i>
-                        </div>
-                        <div>
-                            <i class="fa-solid fa-person">
-                                <input type="button" name="familial" id="familial" value="Familial">
-                            </i>
-                        </div>
-                        <div>
-                            <i class="fa-solid fa-heart">
-                                <input type="button" name="romantique" id="romantique" value="Romantique">
-                            </i>
-                        </div>
-                        <div>
-                            <i class="fa-solid fa-dog">
-                                <input type="button" name="animauxautorisés" id="animauxautorisés" value="Animaux autorisés">
-                            </i>
-                        </div>
-                    </div>                
+                <div id="zonedesfiltres">
+                    
+                    <label for="filtre" id="filtre">Filtres</label>      
+                     
+
+                    <div class="boutondefiltres">
+                            <i class="fa-solid fa-money-bill-wave"></i>
+                            <input type="button" name="economique" id="economique" value="Economique">
+                        
+                    </div>
+
+                    <div class="boutondefiltres">
+                        <i class="fa-solid fa-person">
+                            <input type="button" name="familial" id="familial" value="Familial">
+                        </i>
+                    </div>
+                    <div class="boutondefiltres">
+                        <i class="fa-solid fa-heart">
+                            <input type="button" name="romantique" id="romantique" value="Romantique">
+                        </i>
+                    </div>
+                    <div class="boutondefiltres">
+                        <i class="fa-solid fa-dog">
+                            <input type="button" name="animauxautorisés" id="animauxautorisés" value="Animaux autorisés">
+                        </i>
+                    </div>
+                     
+                </div>                
             </form>
         </section>
 

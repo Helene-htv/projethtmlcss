@@ -32,7 +32,7 @@
     font-size: 16px;
   }
 
-  a:hover{
+  header a:hover{
     border-top: 2px #0065FC solid;
     font-family: 'Raleway', sans-serif;
     color:#0065FC;
@@ -51,19 +51,19 @@
     margin-bottom: 8px;  /* marge en bas de l'élément h1 espacée de 8px par rapport à l'élément du dessous p  */
   }
 
-  section p{
+  #rechercheetfiltres p{
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 16px;
     margin-top: 0px;  /* marge en haut de 0px */
-    margin-bottom: 20px; /* marge en bas de l'élément p espacée de 20px par rapport à l'élément du dessous la barre de recherche  */
+    margin-bottom: 30px; /* marge en bas de l'élément p espacée de 20px par rapport à l'élément du dessous la barre de recherche  */
   }
 
   
 
   #barrederecherche{   /*  cadre de la zone de recherche  */
     display: flex;
-    margin-bottom: 25px;  /* marge en bas du cadre de la zone de recherche espacée de 25px par rapport à l'élément du dessous zone des filtres  */
+    margin-bottom: 30px;  /* marge en bas du cadre de la zone de recherche espacée de 25px par rapport à l'élément du dessous zone des filtres  */
   }
 
   #zoneicone{
@@ -195,44 +195,223 @@
     padding-right: 5px;
   }
 
-  p{
+  /*p{
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 16px;
     margin-top: 0px;  /* marge en haut de 0px */
-    margin-bottom: 50px; /* marge en bas de l'élément p espacée de 50px par rapport à l'élément du dessous la barre de recherche  */
-  }
+   /* margin-bottom: 50px; /* marge en bas de l'élément p espacée de 50px par rapport à l'élément du dessous la barre de recherche  */
+ /* }*/
 
 
   #hebergements{
     margin-top: 0px;
     margin-bottom: 40px;
+    padding-top: 8px;
+    padding-left: 45px;
+    padding-right: 45px;
     background: #F2F2F2;
     border-radius: 20px;
-    width: 60%;
-    height: 50%;
+    width: 65%;
+    height: 65%;
     
+  }
+
+  #hebergements h1{
+    padding-left: 8px;
   }
 
   .disposition-cardshebergements{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 0px;
+    /*padding-right: 10px;*/
+  
+  
   }
 
   .cardhebergements{
     background-color: #FFFFFF;
     border-radius: 20px;
     margin-left: 2px;
-    margin-bottom: 2px;
+    margin-bottom: 11px;
+   
   }
   .cardhebergements img{
-    width: 80%;
-    height: 120px;
+    width: auto;
+    height: 170px;
     object-fit: contain;
     border: 5px solid #FFFFFF;
     border-radius: 20px 20px 0px 0px;
+    
+    margin-bottom: 1px;
   }
+
+  .container{
+    text-decoration: none;
+    width: 250px;
+    padding-bottom: 3px;
+    margin-bottom: 7px;
+  }
+
+  .container h2{
+    font-family: 'Raleway';
+    font-style: bold;
+    font-weight: 700;
+    font-size: 16px;
+    color:black;
+    padding-left: 7px;
+    margin-top: 0px;
+   }
+
+  .container p{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color:black;
+    padding-left: 7px;
+    margin-top: 0px;
+
+  }
+
+  .container i{
+    color:#0065FC;
+    padding-left: 7px;
+    margin-top: 0px;
+    font-size: 0.8em;
+  }
+
+
+
+  #afficherplus{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    padding-top: 8px;
+    padding-bottom: 18px;
+  }
+
+  .cardhebergements a{
+    text-decoration: none;
+  }
+
+  #afficherplus a{
+    text-decoration: none;
+    color: #000000;
+  }
+
+
+
+
+
+
+
+
+  #lespluspopulaires{
+    margin-top: 0px;
+    margin-bottom: 40px;
+    margin-left: 30px;
+    padding-top: 8px;
+    padding-left: 35px;
+    padding-right: 35px;
+    background: #F2F2F2;
+    border-radius: 20px;
+    width: 25%;
+    height: 65%;
+    
+  }
+
+  #lespluspopulaires h1{
+    padding-left: 8px;
+    
+  }
+
+  .fa-chart-line{
+    padding-left: 90px;
+    color: #0065FC;
+  }
+
+  .disposition-cardspopulaires{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+  }
+
+  .cardspopulaires{
+   
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    margin-left: 2px;
+    margin-bottom: 11px;
+   
+  }
+
+  .cardspopulaires img{
+    width: auto;
+    height: 90px;
+    object-fit: contain;
+    border: 5px solid #FFFFFF;
+    border-radius: 20px 0px 0px 20px;
+    
+    margin-bottom: 1px;
+  }
+
+  .containerpopulaires{
+    
+    text-decoration: none;
+    width: 100px;
+    padding-bottom: 3px;
+    margin-bottom: 7px;
+  }
+
+  .containerpopulaires h2{
+    font-family: 'Raleway';
+    font-style: bold;
+    font-weight: 700;
+    font-size: 16px;
+    color:black;
+    padding-left: 7px;
+    margin-top: 10px;
+   }
+
+  .containerpopulaires p{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color:black;
+    padding-left: 7px;
+    margin-top: 0px;
+    padding-bottom: 85px;
+
+  }
+
+  .containerpopulaires i{
+    color:#0065FC;
+    padding-left: 7px;
+   
+    font-size: 0.8em;
+  }
+
+
+
+  
+
+  .cardspopulaires a{
+    text-decoration: none;
+    display: flex;
+  }
+
+
+
+  #cardshebergementsetlespluspopulaires{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  
+
 

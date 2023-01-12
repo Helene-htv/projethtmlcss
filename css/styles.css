@@ -6,7 +6,14 @@
     margin-left: auto;
   }
 
-  /*Ci-dessous sont regrupés le css qui se répète plusieurs fois dans ma page*/
+  /*Ci-dessous sont regrupés le code de la police css qui se répète plusieurs fois*/
+  
+  #bouton, #filtre, #saisie, #afficherplus, footer h1{
+    font-family: 'Raleway' ,  sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  
   main h1{
     font-family: 'Raleway', sans-serif;
     font-style: normal;
@@ -76,8 +83,7 @@
   }
   /*Première section*/
   #rechercheetfiltres p{
-    margin-top: 0px;  /* marge en haut de 0px */
-    margin-bottom: 30px; /* marge en bas de l'élément p espacée de 30px par rapport à l'élément du dessous la barre de recherche  */
+    margin: 0px 0px 30px 0px;  
   }
 
   #barrederecherche{   /*  cadre de la zone de recherche  */
@@ -95,23 +101,19 @@
   }
 
   .fa-location-dot{
-      position:absolute;
-      padding-top: 15px;
-      padding-left: 18px;
-      font-size: 1.2em;
+    position:absolute;
+    padding: 15px 0px 0px 18px;
+    font-size: 1.2em;
   }
 
   #saisie{     /*ici la zone de la saisie de notre recherche de la ville de notre hébergement*/
     width:280px;
     height: 49px;
     margin-top: 0px; /* marge en haut de 0px */
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 18px;
     border: 1px solid #F2F2F2;
   }
 
-  input:focus {
+  input:focus {    /*Retire l'encadrement bleu de la zone de saisie*/
     outline:  none;
   }
 
@@ -120,31 +122,24 @@
     height: 49px;
     margin-top: 0px;  /* marge en haut de 0px */
     color:#FFFFFF;
-    font-size: 18px;
     background-color:#0065FC;
     border: 1px solid #0065FC;
     border-radius: 0px 15px 15px 0px;
   }
 
-  #bouton:hover{
+  #bouton:hover{  /*Remplace la flèche par une main au passage de la sourie sur le bouton rechercher*/
     cursor: pointer;
   }
 
   #zonedesfiltres{ /*  cadre de la zone des filtres*/
     display:flex;  /* on utilise flexbox pour que la zone des filtres se mette en ligne */
-    flex-direction: row;
+    flex-direction: row;  /*les éléments sont en ligne, par défault*/
     align-items: center;
-    margin-top: 0px;
-    margin-left: 10px;  /* espace les éléments de la zone des filtres sur la gauche*/
-    margin-bottom: 40px;
+    margin: 0px 0px 40px 10px;
   }
 
-    
   #filtre{
     margin-right: 35px;  /* marge à droite pour espacer les boutons de filtres du titre filtre*/
-    font-family: 'Raleway' ,  sans-serif;
-    font-weight: 700;
-    font-size: 18px;
   }
   
   .boutondefiltres{
@@ -222,11 +217,12 @@
     background-color: #FFFFFF;
     border-radius: 20px;
     margin-bottom: 30px;
-    width: 31%;
+    width: 30%;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
   }
 
   .cardhebergements img{
-    width: 96%;
+    width: 95%;
     height: 150px;
     object-fit: cover;
     border: 5px solid #FFFFFF;
@@ -236,22 +232,16 @@
   .container{
     text-decoration: none;
     padding-left: 13px;
-    padding-right: 18px;
     margin-bottom: 7px;
   }
 
   .container h2,.container p{
     margin: 0px;
     padding-bottom: 2px;
-   }
+  }
 
   #afficherplus{
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    padding-top: 8px;
-    padding-bottom: 18px;
+    padding: 8px 0px 18px 0px;
   }
 
   .cardhebergements a{
@@ -264,12 +254,8 @@
   }
 
   #lespluspopulaires{
-    margin-top: 0px;
-    margin-bottom: 40px;
-    margin-left: 30px;
-    padding-top: 8px;
-    padding-left: 45px;
-    padding-right: 45px;
+    margin: 0px 0px 40px 30px;
+    padding: 8px 45px 0px 45px;
     background: #F2F2F2;
     border-radius: 20px;
     width: 25%;
@@ -282,8 +268,9 @@
   }
 
   .fa-chart-line{
-    padding-left: 90px;
+    padding-left: 85px;
     color: #0065FC;
+    font-size: 0.8em;
   }
 
   .disposition-cardspopulaires{
@@ -295,9 +282,9 @@
   .cardspopulaires{
     background-color: #FFFFFF;
     border-radius: 20px;
-    margin-left: 2px;
-    margin-bottom:35px;
+    margin: 0px 0px 35px 2px;
     height: 35%;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
   }
 
   .cardspopulaires img{
@@ -311,22 +298,22 @@
 
   .containerpopulaires{
     text-decoration: none;
-    padding-left: 7px;
+    padding-left: 12px;
   }
 
   .containerpopulaires h2{
-    margin-top: 12px;
-    margin-bottom: 2px;
+    margin: 0px;
+    padding: 13px 0 4px 0px;
    }
 
   .containerpopulaires p{
     margin:0px;
-    padding-bottom: 70px;
+    padding-bottom: 2px;
   }
 
-  /*.containerpopulaires+p:nth-last-child(2){
+  /* .containerpopulaires :nth-child(3){
     padding-bottom: 40px;
-  }*/
+  } */
 
   .cardspopulaires a{
     text-decoration: none;
@@ -349,11 +336,8 @@
 
   /*Troisième section*/
   #activites{
-    margin-top: 0px;
-    margin-bottom: 40px;
-    padding-top: 8px;
-    padding-bottom: 0px;
-    padding-left: 0px;
+    margin: 0px 0px 40px 0px;
+    padding-top: 8px ;
     width: 100%;
     height: 50%;
   }
@@ -369,7 +353,7 @@
   }
 
   .cardsactivites{
-    box-shadow: 0px 6px 3px rgba(189, 185, 185, 0.21);
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
     border-radius: 20px;  /*arrondie des cards activites*/
     width: 23%;   /*largeur des cards activités*/
   }
@@ -399,17 +383,7 @@
     background-color: #F2F2F2;
     display: flex;
     flex-direction: row;
-    padding-left: 50px;
-    padding-top: 30px;
-    padding-bottom: 50px;
-   }
-
-  footer h1{
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    margin-bottom: 0px;
+    padding: 30px 0px 50px 50px;
   }
 
   ul{

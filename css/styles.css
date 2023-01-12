@@ -11,21 +11,21 @@
   #bouton, #filtre, #saisie, #afficherplus, footer h1{
     font-family: 'Raleway' ,  sans-serif;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.125em;
   }
   
   main h1{
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 22px;
+    font-size: 1.375em;
   }
 
   h2{
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1em;
     color:black;
   }
   
@@ -33,7 +33,7 @@
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1em;
     color:black;
   }
 
@@ -41,7 +41,7 @@
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.875em;
     color:black;
   }
 
@@ -67,7 +67,7 @@
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1em;
     color:black;
   }
 
@@ -174,7 +174,7 @@
     margin-right: 60px;
     font-family: 'Raleway';
     font-weight: 700;
-    font-size: 17px;
+    font-size: 1.063em;
   }
 
   button i{
@@ -401,4 +401,64 @@
     padding-right: 200px;
   }
 
-  
+  /*Responsive design : Média queries*/
+  /*média query pour Tablette*/
+  @media screen and (min-device-width : 768px) and (max-device-width : 992px) {
+    h1{
+      color: red;
+    }
+
+    #mapage{            
+      margin : 25px 40px 25px 40px;
+    }
+
+
+    #cardshebergementsetlespluspopulaires{
+      flex-direction: column;
+      
+      /* justify-content: space-between;
+      align-items: center; */
+     }
+
+    #rechercheetfiltres{
+      width: 98%;
+      margin-right: 90px;
+    }
+
+    #hebergements{
+      width: 83%;
+      margin-right: 90px;
+      /* margin: 0px 15px 40px 15px; */
+    }
+      
+    #activites{
+      width: 83%;
+      margin-right: 90px;
+    }
+    .disposition-cardspopulaires{
+      
+      flex-direction: row;
+      justify-content: space-between;
+
+      
+    }
+    #lespluspopulaires{
+      width: 83%;
+      margin-left: 0px;
+      /*margin-right: 40px; */
+      /* margin: 0px 15px 40px 15px; */
+    }
+     
+
+    
+    }
+
+
+
+ 
+  /*média query pour téléphone portable*/
+  /* @media screen and (max-device-width : 768px) {
+    h1{
+      color: blueviolet;
+    }
+    } */ 

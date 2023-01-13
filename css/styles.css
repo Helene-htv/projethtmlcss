@@ -91,6 +91,10 @@
     margin-bottom: 30px;  /* marge en bas du cadre de la zone de recherche espacée de 25px par rapport à l'élément du dessous zone des filtres  */
   }
 
+  #barreloupe{
+    display: none;
+  }
+
   #zoneicone{
     position: relative;
     width: 50px;
@@ -117,6 +121,8 @@
     outline:  none;
   }
 
+  
+  
   #bouton{    /* bouton cliquable pour valider notre recherche */
     width: 132px;
     height: 49px;
@@ -126,6 +132,25 @@
     border: 1px solid #0065FC;
     border-radius: 0px 15px 15px 0px;
   }
+
+  /* #loupe{    /* bouton cliquable pour valider notre recherche */
+    /* width: 60px;
+    height: 49px;
+    margin-top: 0px;  marge en haut de 0px */
+    /* background-color:#0065FC;
+    border: 1px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;
+  } */ 
+
+  /* #loupe{
+    display: none;
+  } */
+
+  .fa-magnifying-glass{
+    color: #FFFFFF;
+  }
+
+  
 
   #bouton:hover{  /*Remplace la flèche par une main au passage de la sourie sur le bouton rechercher*/
     cursor: pointer;
@@ -311,9 +336,9 @@
     padding-bottom: 2px;
   }
 
-  /* .containerpopulaires :nth-child(3){
-    padding-bottom: 40px;
-  } */
+  .containerpopulaires .fa-star{
+    padding-top: 55px;
+  } 
 
   .cardspopulaires a{
     text-decoration: none;
@@ -402,63 +427,103 @@
   }
 
   /*Responsive design : Média queries*/
+
   /*média query pour Tablette*/
   @media screen and (min-device-width : 768px) and (max-device-width : 992px) {
-    h1{
-      color: red;
-    }
-
+    
     #mapage{            
-      margin : 25px 40px 25px 40px;
+      margin : 25px 60px 0px 60px;
+    }
+    
+    #rechercheetfiltres{
+      width: 96%;
+      margin-right: 90px;
     }
 
-
+    #filtre{
+      margin-right: 15px;  
+    }
+    
     #cardshebergementsetlespluspopulaires{
       flex-direction: column;
-      
-      /* justify-content: space-between;
-      align-items: center; */
-     }
-
-    #rechercheetfiltres{
-      width: 98%;
-      margin-right: 90px;
     }
 
     #hebergements{
-      width: 83%;
-      margin-right: 90px;
-      /* margin: 0px 15px 40px 15px; */
+      width: 85%;
     }
-      
-    #activites{
-      width: 83%;
-      margin-right: 90px;
-    }
+    
     .disposition-cardspopulaires{
-      
-      flex-direction: row;
       justify-content: space-between;
-
-      
+      flex-direction: row;
     }
+
+    .cardspopulaires {
+      width: 30%;
+      margin-right: 10px;
+    }
+
     #lespluspopulaires{
-      width: 83%;
+      width: 85%;
+      height: 40%;
       margin-left: 0px;
-      /*margin-right: 40px; */
-      /* margin: 0px 15px 40px 15px; */
     }
      
+    .fa-chart-line{
+      padding-left: 600px;
+    }
 
-    
+    #activites{
+      width: 94%;
+      padding-top: 0px;
+    }
+
+    footer{
+      justify-content: space-around;
+      margin-right: 60px;
+      padding:0px;
+    }
+
+    .bloc{
+      padding-right: 0px;
+      
+    }
     }
 
 
 
  
   /*média query pour téléphone portable*/
-  /* @media screen and (max-device-width : 768px) {
-    h1{
-      color: blueviolet;
-    }
-    } */ 
+    @media screen and (max-device-width : 768px) {
+
+      #mapage{
+        margin-top: 10px;
+      }
+
+      nav{
+        flex-direction: column;
+        border-bottom: 2px #F2F2F2 solid;
+      }
+
+      #lienheader a:hover{
+        border-top: none;
+        border-bottom: 2px #0065FC solid;
+      }
+      #barrederecherche{
+        display: none;
+      }
+
+      #barreloupe{   /*  cadre de la zone de recherche  */
+        display: flex;
+        margin-bottom: 30px;  /* marge en bas du cadre de la zone de recherche espacée de 25px par rapport à l'élément du dessous zone des filtres  */
+      }
+
+      #loupe{    /* bouton cliquable pour valider notre recherche */
+        width: 60px;
+        height: 49px;
+        margin-top: 0px;  /* marge en haut de 0px */
+        background-color:#0065FC;
+        border: 1px solid #0065FC;
+        border-radius: 0px 15px 15px 0px;
+      }
+    
+    } 

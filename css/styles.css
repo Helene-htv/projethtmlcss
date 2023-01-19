@@ -120,8 +120,6 @@
   input:focus {    /*Retire l'encadrement bleu de la zone de saisie*/
     outline:  none;
   }
-
-  
   
   #bouton{    /* bouton cliquable pour valider notre recherche */
     width: 132px;
@@ -309,19 +307,12 @@
   }
 
   .containerpopulaires{
-    display: flex;
-    flex-direction: column;
-    /* justify-content: space-between; */
-   
+    /* display: flex;
+    flex-direction: column; */
+    position: relative;
     text-decoration: none;
     padding-left: 12px;
   }
-
-  /* .fa-star:nth-child(3){
-    justify-content: flex-end;
-    
-  } */
-  
 
   .containerpopulaires h2{
     margin: 0px;
@@ -341,6 +332,11 @@
   .fa-star{
     color:#0065FC;   
     font-size: 0.8em;
+  }
+
+  .etoilespopulaires{
+    position: absolute;
+    bottom: 10px;
   }
 
   .fa-star:last-child{
@@ -460,10 +456,6 @@
       margin-left: 0px;
     }
      
-    /* .fa-chart-line{
-      padding-left: 600px;
-    } */
-
     .cardsactivites img{
       height: 85%;
     }
@@ -521,5 +513,8 @@
         border: 1px solid #0065FC;
         border-radius: 0px 15px 15px 0px;
       }
+
+
+      
     
     } 

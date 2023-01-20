@@ -78,9 +78,10 @@
   }
 
   /*Partie du corps de ma page avec 3 sections*/
-  main{
+  #contenuprincipal{
     margin : 63px 0px 60px 0px;
   }
+
   /*Première section*/
   #rechercheetfiltres p{
     margin: 0px 0px 30px 0px;  
@@ -307,8 +308,6 @@
   }
 
   .containerpopulaires{
-    /* display: flex;
-    flex-direction: column; */
     position: relative;
     text-decoration: none;
     padding-left: 12px;
@@ -484,7 +483,16 @@
     @media screen and (max-device-width : 768px) {
 
       #mapage{
-        margin-top: 10px;
+        margin: 10px 0px 0px 0px;
+      }
+
+      #logo{
+        margin-bottom: 30px;
+      }
+
+      header img{
+        width : 130px;
+        height : auto;
       }
 
       nav{
@@ -492,10 +500,21 @@
         border-bottom: 2px #F2F2F2 solid;
       }
 
+      .entete{
+        margin-bottom: 15px;
+      }
+
       #lienheader a:hover{
         border-top: none;
         border-bottom: 2px #0065FC solid;
       }
+      
+      
+
+      #rechercheetfiltres{
+        margin: 0px 20px 0px 20px;
+      }
+
       #barrederecherche{
         display: none;
       }
@@ -514,7 +533,51 @@
         border-radius: 0px 15px 15px 0px;
       }
 
+      #blocalaligne{
+        display: block;
+      }
 
+      #hebergements h1{
+        margin-left: 15px;
+      }
+
+      #zonedesfiltres{ 
+       
+        flex-direction: column;
+        /* justify-content: flex-start;   */
+        /* align-items: none; */
+      } 
+
+    
+
+
+
+      #cardshebergementsetlespluspopulaires{
+
+        flex-direction: column-reverse;
+      }
+      
       
     
+      #lespluspopulaires{
+        margin: 0px 0px 15px 0px;
+        border-radius: 0px;
+        width: 92%;
+      }
+
+      .disposition-cardspopulaires{
+        flex-direction: column;
+      }
+
+      #hebergements{
+       
+        background-color: #FFFFFF;      
+        width: 92%;
+      }
+      
+      .disposition-cardshebergements{
+        flex-direction: column;
+      }
+
+      
     } 

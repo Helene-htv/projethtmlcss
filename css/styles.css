@@ -397,7 +397,7 @@
     padding-left: 0px;
   }
 
- li{
+  li{
     list-style-type: none;
     padding-bottom: 10px;
   }
@@ -556,6 +556,7 @@
         height: 120px;
         font-size: 3.2em;
         padding-left: 30px;
+        border: 2px solid #F2F2F2;
       }
     
       #loupe{    /* bouton cliquable pour valider notre recherche */
@@ -567,7 +568,7 @@
         border-radius: 0px 38px 38px 0px;
       }
 
-      #blocalaligne{
+     #blocalaligne{
         display: block;
       }
 
@@ -580,8 +581,8 @@
       }
       
       #filtre{
-            font-size: 2.8em;
-            }
+        font-size: 2.8em;
+      }
 
       #abc{
         display: grid;
@@ -593,7 +594,7 @@
 
       .boutondefiltres{
         font-size: 1.9em;
-        border: 3px solid #D9D9D9;
+        border: 5px solid #D9D9D9;
         border-radius: 60px; 
         height: 125px;
         width: 430px;
@@ -606,19 +607,33 @@
       #animauxautorises{
         width: 430px;
       }
-    
+      
+      button i{ /*Icones de la zone des filtres*/
+        font-size: 1.6em;
+      }
+
+      .fa-info{
+        font-size: 0.8em;
+        border: 3px solid #D9D9D9;
+        border-radius: 40px;
+        margin: 0px 10px 10px 10px;
+        padding: 16px 25px 16px 25px;
+      } 
+      
+
 
       #cardshebergementsetlespluspopulaires{
         flex-direction: column-reverse;
       }
-      
+
+      #cardshebergementsetlespluspopulaires h2{
+        font-size: 2.6em;
+      }
+
       #cardshebergementsetlespluspopulaires p{
         font-size: 2.2em;
       }
-      
-
-
-
+     
       #lespluspopulaires{
         margin: 0px 0px 30px 0px;
         padding: 8px 55px 50px 55px;
@@ -629,7 +644,6 @@
 
       .disposition-cardspopulaires{
         flex-direction: column;
-     
       }
 
      
@@ -641,35 +655,27 @@
       #lespluspopulaires h1{
         padding-bottom: 20px;
       }
-    
-      
-     
+         
       .cardspopulaires{
-        
         border-radius: 40px; 
-        /* margin-bottom: 35px;
-        height: 65%; */
-        /* box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1); */
       }
     
       .cardspopulaires img{
         width: 40%;
         height: 350px;
         object-fit: cover;
-        border: 8px solid #FFFFFF;
+        border: 11px solid #FFFFFF;
         border-radius: 40px 0px 0px 40px;
-        /*margin-bottom: 1px; */
       }
     
       .containerpopulaires h2{
         margin: 0px;
-        padding: 13px 0 4px 12px;
-        font-size: 2.6em;
-       }
+        padding: 35px 0px 8px 25px;
+      }
     
       .containerpopulaires p{
         margin:0px;
-        padding: 0px 0px 2px 12px;
+        padding: 0px 0px 2px 25px;
       }
     
       .cardspopulaires a{
@@ -681,33 +687,82 @@
         font-size: 2em;
       }
       
-      
-
-
-
-
-
-
-
-
-
-
-
-      #hebergements h1{
-              margin-left: 15px;
+      .etoilespopulaires{
+        left: 25px;
+        bottom: 35px;
       }
 
-      #hebergements{
-       
-        background-color: #FFFFFF;      
-        width: 92%;
-      }
-      
+
+
+
+
+
+
+
+
+
+
       .disposition-cardshebergements{
         flex-direction: column;
       }
 
-      
+      #hebergements{
+        margin: 0px 0px 40px 0px;
+        padding: 0px 55px 50px 55px;
+        background-color: #FFFFFF;     
+        border-radius: 40px;
+        width: 92%;
+        height: auto;
+      }
+    
+      #hebergements h1{
+        padding-left: 15px;
+      }
+    
+      .disposition-cardshebergements{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-left: 15px;
+      }
+    
+      .cardhebergements{
+        border-radius: 40px;
+        margin-bottom: 30px;
+        width: 98%;
+      }
+    
+      .cardhebergements img{
+        width: 98%;
+        height: 300px;
+        object-fit: cover;
+        border: 11px solid #FFFFFF;
+        border-radius: 40px 40px 0px 0px;
+      }
+    
+      .container{
+        text-decoration: none;
+        padding-left: 30px;
+        margin-bottom: 23px;
+      }
+    
+      .container h2, .container p{
+        margin: 0px;
+        padding-bottom: 10px;
+      }
+
+      .cardhebergements a{
+        text-decoration: none;
+      }
+    
+      #afficherplus{
+          display: none;
+      }
+
+
+
+
+
 
 
 
@@ -728,5 +783,17 @@
 
       footer{
         flex-direction: column;
+      }
+
+      .bloc{
+        padding: 20px 0px 0px 20px;
+      }
+
+      .bloc h1{
+        font-size: 3.2em;
+      }
+
+      .bloc li{
+        font-size: 2.6em;
       }
     } 

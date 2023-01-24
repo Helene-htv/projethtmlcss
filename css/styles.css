@@ -420,7 +420,7 @@
                   /*média query pour Tablette*/
                   /*média query pour Tablette*/
 
-  @media screen and (min-device-width : 768px) and (max-device-width : 992px) {
+  @media screen and (min-width : 768px) and (max-width : 992px) {
     
     #ma-page{            
       margin : 25px 60px 0px 60px;
@@ -489,7 +489,7 @@
               /*média query pour téléphone portable*/
               /*média query pour téléphone portable*/
 
-    @media screen and (max-device-width : 768px) {
+    @media screen and (max-width : 768px) {
 
       #ma-page{
         margin: 50px 0px 0px 0px;
@@ -521,8 +521,7 @@
         border-top: none;
         border-bottom: 2px #0065FC solid;
       }
-     
-      
+           
       #contenu-principal{
         margin : 40px 0px 0px 0px;
       }
@@ -540,8 +539,6 @@
         margin: 80px 20px 0px 45px;
       }
       
-     
-
       #barre-de-recherche{
         display: none;
       }
@@ -579,7 +576,7 @@
         border-radius: 0px 38px 38px 0px;
       }
 
-     #bloc-a-la-ligne{
+      #bloc-a-la-ligne{
         display: block;
       }
 
@@ -631,8 +628,6 @@
         padding: 16px 25px 16px 25px;
       } 
       
-
-
       #cartes-hebergements-et-populaires{
         flex-direction: column-reverse;
       }
@@ -657,7 +652,6 @@
         flex-direction: column;
       }
 
-     
       .cartes-populaires a {
         width: 92%;
         height: auto;
@@ -702,16 +696,6 @@
         left: 25px;
         bottom: 35px;
       }
-
-
-
-
-
-
-
-
-
-
 
       .disposition-cartes-hebergements{
         flex-direction: column;
@@ -762,20 +746,6 @@
       #afficher-plus{
           display: none;
       }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
       .disposition-cartes-activites{
         flex-direction: column;
